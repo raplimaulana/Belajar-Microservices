@@ -1,0 +1,17 @@
+### ARSITEKTUR MONOLITH ###
+Apa itu arsitektur monolith?
+Arsitektur monolith merupaka Single Deployment Unit, dimana semua fitur dibuat dalam sebuah aplikasi besar. Satu server menghandle banyak fitur.
+
+Kelebihan arsitektur monolith:
+•   Mudah di Develop.
+•   Mudah di Deploy.
+•   Mudah di Test.
+•   Mudah di Scale.
+
+Masalah di arsitektur monolith:
+•   Mengintimidasi Developer yang baru bergabung.
+•   Scaling development dengan banyak Developer agak menyulitkan.
+•   Butuh kontrak panjang dengan teknologi yang digunakan (bahasa pemrograman, database, dan lain-lain).
+•   Scaling pada bagian tertentu tidak bisa dilakukan.
+•   Running app Monolith sangat berat.
+

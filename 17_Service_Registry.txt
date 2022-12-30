@@ -1,0 +1,21 @@
+### SERVICE REGISTRY ###
+
+Kekurangan Client Side Discovery:
+•   Client harus tahu lokasi semua service.
+•   Jika jumlah node service bertambah atau berkurang, client harus diubah untuk lokasi baru nya.
+•   Jika client salah mengimplementasikan logic untuk load balancer, maka traffic ke service yang dituju bisa tidak merata pembagiannya.
+
+Service Registry
+Service Registry  adalah aplikasi yang digunakan sebagai tempat untuk menyimpan semua informasi yang berhubungan dengan lokasi service.
+Semua service akan meregistrasikan alamat lokasi nya di Service Registry ketika pertama kali nyala.
+Semua service akan laporan ke Service Registry jika akan berhenti beroperasi, sehingga Service Registry akan menghilangkan informasi service tersebut agar tidak mendapat traffic dari service yang bertanya.
+
+# Registrasi ke Service Registry #
+
+# Bertanya ke Service Registry #
+
+# Health Check di Service Registry #
+
+Contoh Aplikasi Service Registry:
+•   Hashicorp Consul https://www.consul.io/
+•   Netflix Eureka https://github.com/Netflix/eureka

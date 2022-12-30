@@ -1,0 +1,7 @@
+### DATABASE PER SERVICE ###
+Kenapa harus satu database per service?
+Untuk memastikan bahwa antar service tidak ketergantungan.
+Tiap service bisa menggunakan aplikasi database sesuai dengan kebutuhan.
+Service tidak perlu tahu kompleksitas internal database service lain (Akses via API).
+
+

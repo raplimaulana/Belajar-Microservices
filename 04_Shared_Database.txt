@@ -1,0 +1,6 @@
+### SHARED DATABASE ###
+Kapan harus shared database?
+•   Ketika melakukan transisi dari aplikasi Monolith ke Microservices.
+•   Ketika bingung memecahkan data antar Service.
+•   Ketika dikejar waktu, sehingga tidak ada waktu untuk bikin API.
+

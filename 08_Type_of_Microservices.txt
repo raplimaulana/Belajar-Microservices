@@ -1,0 +1,24 @@
+### TYPE OF MICROSERVICES ###
+Tipe microservices:
+•   Stateless Microservice.
+    - Biasanya tidak memiliki database.
+    - Digunakan untuk melakukan tugas sederhana.
+    - Biasa digunakan juga sebagai utility untuk microservice lain.
+    - Tidak bergantung dengan microservice lain.
+    - Contohnya Email service untuk mengirim email saja dan SMS service untuk mengirim SMS saja.
+
+•   Persistence Microservice
+    - Biasanya memiliki database. 
+    - Bisa juga disebut sebagai Master Data Microservice.
+    - Biasa digunakan untuk mengolah data di database (CRUD).
+    - Contohnya Costumer Service menggunakan database MySQL, Product Service menggunakan PostgreSQL dan Order Service menggunakan MongoDB.
+
+•   Aggregation Microservices
+    - Tergantung dengan microservice lain.
+    - Biasa digunakan sebagai pusat business logic aplikasi.
+    - Boleh memiliki database ataupun tidak.
+    - Tidak bisa berdiri sendiri.
+    - Contohnya Cart Service yang membutuhkan service lain. jika custoumer ingin melihat barang, maka akan menggunakan Order service yang terintegerasi dengan database MongoDB.
+    - Contoh lain adalah Payment Service. Dia akan mengambil data order dari Order Service untuk selanjutnya dikirimkan ke Payment Gateway serta akan menggunakan Email Service untuk memberi pemberitahuan via email bahwa pembelian produk berhasil dilakukan.
+
+

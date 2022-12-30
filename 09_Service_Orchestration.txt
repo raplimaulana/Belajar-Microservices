@@ -1,0 +1,15 @@
+### SERVICE ORCHESTRATION ###
+Sebelumnya kita sudah bahas tentang tipe Aggregation Microservices.
+Cara Aggregation Microservices berkomunikasi dengan Microservices lain, jika menggunakan Remote Procedure Invocation (API), maka dinamakan Service Orchestration Pattern.
+Dalam Service Orchestration Pattern, Aggregation Microservices bertugas untuk mengatur alur business logic sistem.
+
+Keuntungan service orchestration:
+•   Mudah dibuat, karena kode business logic akan terpusat di Aggregation Microservices.
+•   Mudah dimengerti, karena kode business logic akan terpusat di Aggregation Microservices.
+
+Kekurangan Service Orchestration:
+•   Aggregation Microservices terlalu ketergantungan dengan Microservices lain.
+•   Aggregation Microservices akan lebih lambat karena harus terkoneksi dengan Microservices lain.
+•   Aggregation Microservices akan lebih mudah error jika di Microservices lain terdapat masalah.
+•   Jika perlu Microservices baru, perlu dilakukan perubahan di Aggregation Microservices.
+

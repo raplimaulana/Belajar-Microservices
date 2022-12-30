@@ -1,0 +1,34 @@
+### MESSAGING ###
+Messaging digunakan ketika sebuah service membutuhkan banyak service lain. 
+Misal sebuah Order Service yang menggunakan database Postgre, ketika customer selesai melakukan order/pesanan kita ingin mengirim email (Email Service), sms (SMS Service) ke customer, mengirim data penjualannya ke finance team (Finance Service) serta mengirim data aktivitas costumer ke menu report (Report Service).
+Jika menggunakan RPI, Order Service akan menyambungkan ke 4 service lain secara terpisah dan harus menunggu respon dari service lain. 
+Contohnya saat Order Service menggirim API ke Email Service untuk mengirim email costumer. Order Service baru bisa melakukan API dengan Finance Service, Apabila Email service sudah membalas bahwa email sudah berhasil dikirim. 
+
+Masalah di Komunikasi RPI:
+•   Proses lama (pada Email Service dan SMS Service).
+•   Mengirim data yang sama berkali-kali (pada Finance Service dan Report Service).
+•   Membuat Paralel Process sangat rumit.
+
+Komunikasi dengan Cara Messaging:
+•   Messaging biasanya digunakan untuk komunikasi Async.
+    Async artinya komunikasi dilakukan tanpa harus menunggu selesai di proses.
+    Dalam async, kadang tidak perlu peduli balasan dari service yang dituju.
+
+•   Biasanya komunikasi Messaging membutuhkan Message Channel sebagai jembatan untuk mengirim dan menerima data.
+    Melakukan instalasi Broker yang terdiri dari 3 message channel. message channel untuk email, SMS dan order.
+    Message channel email terhubung dengan Email Service, message channel SMS terhubung dengan SMS Service, message channel order terhubung dengan Finance Service dan Report Service.  
+
+•   Direkomendasikan menggunakan aplikasi Message Broker untuk melakukan management Message Channel.
+
+Contoh Message Broker
+•   Redis (PubSub)
+•   Apache Kafka
+•   RabbitMQ
+•   NSQ
+•   Google PubSub
+•   Amazon Web Service SQS
+•   dll
+
+Keuntungan Menggunakan Messaging
+•   Proses lebih cepat karena tidak harus menunggu response.
+•   Service pengirim data tidak perlu peduli terhadap penerima data.

@@ -1,0 +1,40 @@
+### ARSITEKTUR MICROSERVICES ###
+Apa itu arsitektur microservices?
+•   Aplikasi-aplikasi kecil yang saling bekerja sama.
+•   Fokus mengerjakan satu pekerjaan dengan baik.
+•   Independent, dapat di deploy dan diubah tanpa tergantung dengan aplikasi lain.
+•   Setiap komponen pada sistem dibuat dalam service.
+    Dalam microservices, setiap aplikasi akan disebut sebagai service.
+•   Komunikasi antar service biasanya melalui network-call.
+    Contoh network-call adalah HTTP API, dll.
+
+Kelebihan arsitektur microservices:
+•   Mudah dimengerti, karena relative kecil ukuran service nya
+•   Lebih mudah di develop, di maintain, di test dan di deploy
+•   Lebih mudah bergonta-ganti teknologi
+•   Mudah di scale sesuai kebutuhan
+•   Bisa dikerjakan dalam tim-tim kecil
+
+Masalah di Arsitektur Microservices:
+•   Distributed system.
+•   Komunikasi antar service yang rawan error.
+•   Testing interaksi antar service lebih sulit.
+
+Pembagian aplikasi microservices menyesuaikan kebutuhan perusahaan masing-masing, secara umum biasanya ada 3 bagian aplikasi yakni:
+•   Merchant
+•   Product
+•   Shipping
+
+*split berdasarkan domain dari bisnisnya, jangan split dari url atau halaman website
+
+Seberapa Kecil Aplikasi Microservices?
+•   Single responsibility.
+•   Sekecil mungkin sehingga bisa dimengerti oleh satu orang.
+•   Bisa di kerjakan sejumlah X developer.
+
+
+Monolith:                         Microservices
+- Simplicity                      - Partial Deployment
+- Consistency                     - Availability
+- Easy to Refactor                - Multiple Platform
+                                  - Easy to Scale

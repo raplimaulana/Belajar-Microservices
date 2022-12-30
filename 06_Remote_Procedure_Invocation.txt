@@ -1,0 +1,21 @@
+### REMOTE PROCEDURE INVOCATION ###
+
+Komunikasi antar Service
+•   Idealnya komunikasi dilakukan melalui RPI (Remote Procedure Invocation) atau RPC (Remote Procedure Call).
+•   Tidak direkomendasikan komunikasi dilakukan via database.
+
+Contoh remote procedure invocation:
+•   RESTful API (HTTP)
+•   gRPC
+•   Apache Thrift 
+•   SOAP
+•   Java RMI
+•   Corba (Common Object Request Broker Architecture)
+•   dan lain-lain
+
+
+Keuntungan Menggunakan RPI
+•   Sederhana dan Mudah.
+•   Biasanya digunakan untuk komunikasi Request - Reply.
+•   Biasanya digunakan untuk proses Sync (yang butuh menunggu jawaban).
+

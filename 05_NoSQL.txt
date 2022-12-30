@@ -1,0 +1,57 @@
+### NoSQL ###
+Apa itu NoSQL?
+NoSQL bukanlah NO (TIDAK/BUKAN) SQL.
+NoSQL singkatan dari Not Only SQL.
+
+Jenis-jenis NoSQL:
+•   Document Oriented Database.
+    Databasenya flexible, bisa menggunakan json.
+
+•   Key-Value Database.
+    Database disimpan di dalam memory, sehingga lebih cepat. 
+    Biasanya digunakan untuk hashing.
+
+•   Column Families Database.
+    Column oriented dan jumlah columnya panjang banget hingga milyaran.
+
+•   Graph Database.
+    Biasanya digunakan untuk relasi-relasi yang agak kompleks seperti social network, dst.
+
+•   Search Database.
+    Biasanya digunakan untuk speasialisasi searching database yang cepat.
+
+•   Time Series Database.
+    Datanya berupa data time series. Misal insert data setiap satu jam, 1 hari, dll menggunakan quary berdasarkan waktu.
+
+•   Dll
+
+Contoh NoSQL database:
+•   MongoDB : Document Oriented Database. 
+•   Elasticsearch : Search Database.
+•   Redis : Key-Value Database.
+•   Apache Cassandra : Column Families Database.
+•   Neo4J : Graph Database.
+•   InfluxDB : Time Series Database.
+
+Kenapa Butuh Tahu NoSQL?
+•   Agar bisa disesuaikan dengan kebutuhan.
+•   Bisa mencari alternatif cara mengolah data.
+•   Mempercepat dalam proses penulisan atau pencarian.
+
+Contoh kasus:
+•   Product Service -> MongoDB
+    Atribute-nya selalu berubah tergantung produknya.
+    Contoh produk HP atrributenya ada resolusi, kapasitas baterai, berat, panjang, dll. Sedangkan untuk makanan atributenya berat, BPOM, dll.
+
+•   Catalog Service -> Elasticsearch
+    Untuk melakukan pencarian produk secara cepat.
+
+•   Order Service -> Postgre
+    Untuk menyimpan data transaksi, bisa menggunakan database biasa.
+
+•   Member Service -> Neo4J
+    Contohnya memiliki fitur bisa saling follow, like postingan, dll.
+    Relasinya telalu banyak, karena terkoneksi ke banyak hal.
+
+•   Activity Service -> InfluxDB
+    Untuk melakukan record aktivitas pelanggan.

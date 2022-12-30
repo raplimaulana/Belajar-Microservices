@@ -1,0 +1,22 @@
+### AUTHENTICATION AND AUTHORIZATION ###
+Bagaimana mengamankan microservices?
+
+•   Authentication :
+    - Memvalidasi kredensial  untuk memverifikasi pemilik identitas
+    - Contoh proses Authentication adalah proses login menggunakan username dan password, dan banyak yang lainnya.
+
+•   Authorization :
+    - Authorization adalah proses yang dilakukan setelah proses Authentication
+    - Memvalidasi apakah pemilik identitas memiliki hak akses untuk mengakses resource yang diminta
+    - Contoh proses Authorization adalah Access-Control List, dan banyak yang lainnya.
+
+#Integrasi dengan Auth Service#
+
+#API Gateway sebagai Middleware#
+
+Teknologi Pendukung
+•   Secure Cookie
+•   Oauth
+•   JSON Web Token
+•   Basic Auth
+•   API Key / Secret Key
